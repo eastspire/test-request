@@ -1,0 +1,20 @@
+[package]
+name = "hyper-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+http-request = "8.30.0"
+hyper = { version = "0.14.28", features = ["full"] }
+tokio = { version = "1.42.0", features = ["full"] }
+
+[profile.dev]
+incremental = true
+opt-level = 3
+lto = true
+panic = "abort"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = "abort"
