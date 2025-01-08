@@ -28,6 +28,22 @@ async fn hyper() {
     .await;
 }
 
+#[tokio::main]
+async fn reqwest() {
+    use tokio::spawn;
+    let _ = spawn(async {
+        let mut total_time: u128 = 0;
+        for _i in 0..TIMES {
+            let start = Instant::now();
+            let _response = reqwest::get(URL).await;
+            let duration: Duration = start.elapsed();
+            total_time += duration.as_micros();
+        }
+        println!("reqwest agv time: {} us", total_time / TIMES);
+    })
+    .await;
+}
+
 fn http_request() {
     use std::thread::spawn;
     spawn(|| {
@@ -35,12 +51,12 @@ fn http_request() {
         for _i in 0..TIMES {
             let start: Instant = Instant::now();
             let mut _request_builder = RequestBuilder::new()
-                .post(URL)
+                .get(URL)
                 .unredirect()
                 .buffer(100)
                 .http1_1_only()
                 .build();
-            let _res = _request_builder.send();
+            let _response = _request_builder.send();
             let duration: Duration = start.elapsed();
             total_time += duration.as_micros();
         }
@@ -58,5 +74,6 @@ fn http_request() {
 fn main() {
     http_request();
     hyper();
+    reqwest();
     sleep(Duration::from_secs(1000));
 }
