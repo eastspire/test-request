@@ -4,10 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-http-request = "8.34.0"
+http-request = "8.35.1"
 hyper = { version = "0.14.28", features = ["full"] }
 tokio = { version = "1.42.0", features = ["full"] }
-reqwest = { version = "0.12", features = ["json"] }
 
 [profile.dev]
 incremental = true

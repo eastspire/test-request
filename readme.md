@@ -1,4 +1,6 @@
 # Test requets
 
-- ./web-server.sh
-- ./test.sh
+```sh
+./web-server.sh;
+./test.sh;
+```

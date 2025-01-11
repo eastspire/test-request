@@ -1,4 +1,4 @@
 #!/bin/bash
 clear
 cd ./test-request
-cargo run
+cargo run --release

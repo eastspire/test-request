@@ -1,3 +1,3 @@
 #!/bin/bash
 cd ./web-server
-cargo run
+cargo run --release
