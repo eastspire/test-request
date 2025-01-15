@@ -1,7 +1,7 @@
 use std::time::{Duration, Instant};
 use tokio;
 
-static TIMES: u128 = 100000;
+static TIMES: u128 = 1000;
 static URL: &str = "http://127.0.0.1:60000/";
 
 #[tokio::main]
