@@ -10,7 +10,7 @@ async fn run_server() {
     server
         .async_router("/", |arc_lock_data: ArcRwLockControllerData| async move {
             let mut data: RwLockWriteControllerData = arc_lock_data.write().unwrap();
-            let stream: Arc<TcpStream> = data.get_stream().clone().unwrap();
+            let stream: ArcTcpStream = data.get_stream().clone().unwrap();
             data.get_mut_response()
                 .set_body("hello".into())
                 .send(&stream)

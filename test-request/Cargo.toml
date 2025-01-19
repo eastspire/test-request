@@ -4,17 +4,26 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-http-request = "8.35.3"
+http-request = "8.35.9"
 hyper = { version = "0.14.28", features = ["full"] }
 tokio = { version = "1.43.0", features = ["full"] }
 
 [profile.dev]
-incremental = true
+incremental = false
 opt-level = 3
 lto = true
 panic = "abort"
+debug = false
+codegen-units = 1
+strip = "debuginfo"
+backtrace = "off"
 
 [profile.release]
+incremental = false
 opt-level = 3
 lto = true
 panic = "abort"
+debug = false
+codegen-units = 1
+strip = "debuginfo"
+backtrace = "off"

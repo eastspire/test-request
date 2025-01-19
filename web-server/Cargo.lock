@@ -43,9 +43,9 @@ dependencies = [
 
 [[package]]
 name = "async-func"
-version = "0.0.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ae19765a91046d3ecda91abef80c535f2afa16c8d7760488e8022e324ab0b3d"
+checksum = "1a9d1cd7c960277b9eb12451de7d68d3c61e152d3d49273f820ed6a04f524849"
 dependencies = [
  "tokio",
 ]
@@ -326,9 +326,9 @@ dependencies = [
 
 [[package]]
 name = "http-compress"
-version = "1.13.1"
+version = "1.13.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "11c3cc34cca2446f41a105b17cb7ef8dcb3103931313da19d4810e13a2ac027d"
+checksum = "183a84739afdc3d79773fadf62747574562dd67524eaaf01820abc3e83f7a5a3"
 dependencies = [
  "brotli",
  "flate2",
@@ -338,15 +338,15 @@ dependencies = [
 
 [[package]]
 name = "http-constant"
-version = "1.25.1"
+version = "1.25.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b7e2991db9cba1223b35dcf186f4a5bf9ff5fdb44abfe346d424fe9107cd4c90"
+checksum = "1865a72e940924a6b72e27c041bef61407d21099ad93c895f325b14303eeb50d"
 
 [[package]]
 name = "http-request"
-version = "8.35.3"
+version = "8.35.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43962383618a15b8612a4fc9269dae70df9294f5311b623e63d498eabb2543bb"
+checksum = "ead60a0be2606b06087a37d55111c1e995d5338fd1342b2a3f96b31f53702935"
 dependencies = [
  "brotli",
  "flate2",
@@ -365,9 +365,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "2.27.1"
+version = "2.30.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "57c2ed8ff3224a582c00eee2d947a80f23e2694acd609c3af972c597fdc94a5a"
+checksum = "8ccbe6bb7e860f783010db48088d2aa6ffdea0157ffdfd8e2014823fc89c7ebe"
 dependencies = [
  "hex",
  "http-constant",
@@ -376,14 +376,15 @@ dependencies = [
  "serde-xml-rs",
  "serde_json",
  "serde_urlencoded",
+ "tokio",
  "url",
 ]
 
 [[package]]
 name = "hyperlane"
-version = "3.3.1"
+version = "3.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee2be0792b906f3b6d9340bee689463ea5ca9fe0f1f9ce6b6f01a57b75309153"
+checksum = "57b7b32c0b661ad88491f326deda5a594b83c1ca6f0924bd9526f9b2b4f3986f"
 dependencies = [
  "async-func",
  "clonelicious",
@@ -392,7 +393,7 @@ dependencies = [
  "http-request",
  "http-type",
  "hyperlane-log",
- "hyperlane-time",
+ "hyperlane-time 0.0.4",
  "lombok-macros",
  "recoverable-spawn",
  "recoverable-thread-pool",
@@ -402,13 +403,13 @@ dependencies = [
 
 [[package]]
 name = "hyperlane-log"
-version = "1.0.0"
+version = "1.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dae2370e84be49f081fcb882dd29a9f1df043d713cd4916d32296c9b02fe85e3"
+checksum = "71044881815a82f158c0f74aebbbcb076ad49247b4f42bf8bb729f2b5f288492"
 dependencies = [
  "file-operation",
  "http-type",
- "hyperlane-time",
+ "hyperlane-time 0.0.3",
  "lombok-macros",
  "once_cell",
  "recoverable-spawn",
@@ -419,6 +420,12 @@ name = "hyperlane-time"
 version = "0.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "49b1b985e97fd18e5a1ff955e831f5f77366f5d5b13a55a6e305193eb8ecbecd"
+
+[[package]]
+name = "hyperlane-time"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1ef7f340b25e134c2bea55c10244625cb5f6fa9a45aedbe225ab5777f12d1f1c"
 
 [[package]]
 name = "icu_collections"
@@ -953,9 +960,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.135"
+version = "1.0.136"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2b0d7ba2887406110130a978386c4e1befb98c674b4fba677954e4db976630d9"
+checksum = "336a0c23cf42a38d9eaa7cd22c7040d04e1228a19a933890805ffd00a16437d2"
 dependencies = [
  "itoa",
  "memchr",
@@ -1020,9 +1027,9 @@ checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 
 [[package]]
 name = "std-macro-extensions"
-version = "0.20.0"
+version = "0.20.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eb81c946abc2091d8d58391d0a3adcbc9d60cddbf3acebbc54690c2ba75ea9b1"
+checksum = "ae796fc6107e7fe9cc616eb9fd282797b2f68b63213bc40dba0302ef8c93802b"
 
 [[package]]
 name = "subtle"
