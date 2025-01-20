@@ -4,13 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-hyperlane = "3.5.1"
+hyperlane = "3.6.4"
 
 [profile.dev]
 incremental = false
 opt-level = 3
 lto = true
-panic = "abort"
+panic = "unwind"
 debug = false
 codegen-units = 1
 strip = "debuginfo"
@@ -20,7 +20,7 @@ backtrace = "off"
 incremental = false
 opt-level = 3
 lto = true
-panic = "abort"
+panic = "unwind"
 debug = false
 codegen-units = 1
 strip = "debuginfo"
