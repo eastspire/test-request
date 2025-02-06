@@ -254,9 +254,9 @@ dependencies = [
 
 [[package]]
 name = "file-operation"
-version = "0.3.2"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68f8b6195494b091e54954486568c8aaea7d3f96ff044ada38e7be5410a45575"
+checksum = "070e4394460c13c82d3bb0ba8bd4352a140f04318f2d44f2fd9a7d878cb7e824"
 dependencies = [
  "tokio",
 ]
@@ -343,9 +343,9 @@ checksum = "7c55fae5d1478014c77ea58dd6248f13dfc17222a969c5f335be2f244d7c3497"
 
 [[package]]
 name = "http-request"
-version = "8.37.4"
+version = "8.37.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0cbb8f38a70f762cd5c1bc35a401d245100e107c51fbd1bcc580fd82b5ff4c3f"
+checksum = "8c4237628a5b6d1f2e8358062a258fee2be8f78ec22f9b1a5319c0ae4bed92b0"
 dependencies = [
  "brotli",
  "flate2",
@@ -382,9 +382,9 @@ dependencies = [
 
 [[package]]
 name = "hyperlane"
-version = "3.6.9"
+version = "3.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9dbc36a9fc477d8712fef966c1f0ac5838797477caac05b63a8fc70a19a0df3c"
+checksum = "0a031656d692ae085b2d07cc107eaeeddb758ca9982cd35488c3b16d7e5cb7be"
 dependencies = [
  "async-func",
  "clonelicious",
@@ -403,9 +403,9 @@ dependencies = [
 
 [[package]]
 name = "hyperlane-log"
-version = "1.1.14"
+version = "1.1.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5eee058516ce8b23660633e57a8a7b74e33fa70c7a8d49e69fbc3749104fe83a"
+checksum = "ec9e05b90f4ef8bcde80dcb071bb12ed1d29535436169881c4bf5f5e4100f6ca"
 dependencies = [
  "file-operation",
  "http-type",
@@ -877,9 +877,9 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.23.21"
+version = "0.23.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f287924602bf649d949c63dc8ac8b235fa5387d394020705b80c4eb597ce5b8"
+checksum = "9fb9263ab4eb695e42321db096e3b8fbd715a59b154d5c88d82db2175b681ba7"
 dependencies = [
  "aws-lc-rs",
  "log",
@@ -954,9 +954,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.137"
+version = "1.0.138"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "930cfb6e6abf99298aaad7d29abbef7a9999a9a8806a40088f55f0dcec03146b"
+checksum = "d434192e7da787e94a6ea7e9670b26a036d0ca41e0b7efb2676dd32bae872949"
 dependencies = [
  "itoa",
  "memchr",
@@ -1021,9 +1021,9 @@ checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 
 [[package]]
 name = "std-macro-extensions"
-version = "0.20.5"
+version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "62b1d584e03ca7e024b8abd29c1cfabb33722305cd504535a631edad79cf1f78"
+checksum = "154a164a9901fa9fc9db90f614215320d0e3ea8a7cab79be94d3004878adcecb"
 
 [[package]]
 name = "subtle"
@@ -1168,9 +1168,9 @@ dependencies = [
 
 [[package]]
 name = "webpki-roots"
-version = "0.26.7"
+version = "0.26.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d642ff16b7e79272ae451b7322067cdc17cadf68c23264be9d94a32319efe7e"
+checksum = "2210b291f7ea53617fbafcc4939f10914214ec15aace5ba62293a668f322c5c9"
 dependencies = [
  "rustls-pki-types",
 ]
