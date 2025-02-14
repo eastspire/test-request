@@ -4,7 +4,6 @@ use tokio;
 static TIMES: u128 = 10000;
 static URL: &str = "http://127.0.0.1:60000/";
 
-#[tokio::main]
 async fn hyper() {
     use hyper::client::*;
     use hyper::Uri;
@@ -61,7 +60,8 @@ fn http_request() {
 /// TCP失败
 /// http-request agv time: 39us
 /// hyper agv time: 224us
-fn main() {
+#[tokio::main]
+async fn main() {
     http_request();
-    hyper();
+    hyper().await;
 }

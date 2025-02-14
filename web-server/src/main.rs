@@ -7,14 +7,12 @@ async fn run_server() {
     server.log_dir("./logs");
     server.log_size(1_024_000);
     server
-        .async_router("/", |arc_lock_data: ArcRwLockControllerData| async move {
-            let mut data: RwLockWriteControllerData = arc_lock_data.write().unwrap();
-            let stream: ArcTcpStream = data.get_stream().clone().unwrap();
-            data.get_mut_response()
-                .set_body("hello".into())
-                .send(&stream)
-                .unwrap();
-        })
+        .async_router(
+            "/",
+            |arc_lock_controller_data: ArcRwLockControllerData| async move {
+                let _ = send_response(&arc_lock_controller_data, 200, "hello");
+            },
+        )
         .await;
     server.listen();
 }
