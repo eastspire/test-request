@@ -27,6 +27,7 @@ async fn hyper() {
 
 fn http_request() {
     use http_request::*;
+    std::env::set_var("RUST_BACKTRACE", "0");
     let mut total_times: u128 = 0;
     let mut err_times: u128 = 0;
     for _i in 0..TIMES {
@@ -54,8 +55,8 @@ fn http_request() {
 /// hyper agv time: 2500us
 ///
 /// hyperlane
-/// http-request agv time: 100us
-/// hyper agv time: 300us
+/// http-request agv time: 78us
+/// hyper agv time: 150us
 ///
 /// TCP失败
 /// http-request agv time: 39us
