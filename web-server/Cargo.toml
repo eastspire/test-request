@@ -1,10 +1,10 @@
 [package]
 name = "web-server"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
-hyperlane = "3.14.0"
+hyperlane = "3.14.1"
 
 [profile.dev]
 incremental = false
