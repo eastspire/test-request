@@ -10,10 +10,10 @@ async fn hyper() {
     std::env::set_var("RUST_BACKTRACE", "0");
     let mut total_times: u128 = 0;
     let mut err_times: u128 = 0;
-    let client: Client<HttpConnector> = Client::new();
     for _i in 0..TIMES {
-        let uri: Uri = URL.parse().expect("");
         let start: Instant = Instant::now();
+        let uri: Uri = URL.parse().expect("");
+        let client: Client<HttpConnector> = Client::new();
         let response: Result<hyper::Response<hyper::Body>, hyper::Error> = client.get(uri).await;
         if response.is_err() {
             err_times += 1;
@@ -30,15 +30,15 @@ fn http_request() {
     std::env::set_var("RUST_BACKTRACE", "0");
     let mut total_times: u128 = 0;
     let mut err_times: u128 = 0;
-    let mut _request_builder: BoxRequestTrait = RequestBuilder::new()
-        .get(URL)
-        .unredirect()
-        .buffer(100)
-        .http1_1_only()
-        .undecode()
-        .build();
     for _i in 0..TIMES {
         let start: Instant = Instant::now();
+        let mut _request_builder: BoxRequestTrait = RequestBuilder::new()
+            .get(URL)
+            .unredirect()
+            .buffer(100)
+            .http1_1_only()
+            .undecode()
+            .build();
         let response = _request_builder.send();
         if response.is_err() {
             err_times += 1;
