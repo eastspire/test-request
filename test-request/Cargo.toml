@@ -1,10 +1,10 @@
 [package]
 name = "hyper-test"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
-http-request = "8.54.0"
+http-request = "8.55.1"
 hyper = { version = "0.14.32", features = ["full"] }
 tokio = { version = "1.44.1", features = ["full"] }
 
