@@ -5,9 +5,8 @@ static TIMES: u128 = 10000;
 static URL: &str = "http://127.0.0.1:60000/";
 
 async fn hyper() {
-    use hyper::client::*;
     use hyper::Uri;
-    std::env::set_var("RUST_BACKTRACE", "0");
+    use hyper::client::*;
     let mut total_times: u128 = 0;
     let mut err_times: u128 = 0;
     for _i in 0..TIMES {
@@ -27,7 +26,6 @@ async fn hyper() {
 
 fn http_request() {
     use http_request::*;
-    std::env::set_var("RUST_BACKTRACE", "0");
     let mut total_times: u128 = 0;
     let mut err_times: u128 = 0;
     for _i in 0..TIMES {
