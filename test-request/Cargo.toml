@@ -4,9 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-http-request = "8.64.0"
-hyper = { version = "0.14.32", features = ["full"] }
-tokio = { version = "1.44.1", features = ["full"] }
+http-request = "=8.64.0"
+hyper = { version = "=0.14.32", features = ["full"] }
+tokio = { version = "=1.44.1", features = ["full"] }
 
 [profile.dev]
 incremental = false
