@@ -1,15 +1,27 @@
 use hyperlane::*;
+use tokio::runtime::{Builder, Runtime};
+
+fn runtime() -> Runtime {
+    Builder::new_multi_thread()
+        .worker_threads(get_thread_count() >> 1)
+        .thread_stack_size(1024)
+        .max_blocking_threads(5120)
+        .max_io_events_per_tick(5120)
+        .enable_all()
+        .build()
+        .unwrap()
+}
 
 async fn request_middleware(ctx: Context) {
     let _ = ctx
         .set_response_header(CONNECTION, CONNECTION_KEEP_ALIVE)
         .await
-        .send_response(200, "hello")
+        .send_response(200, "Hello")
         .await;
+    let _ = ctx.flush().await;
 }
 
-#[tokio::main]
-async fn main() {
+async fn run() {
     let server: Server = Server::new();
     server.host("0.0.0.0").await;
     server.port(60000).await;
@@ -25,3 +37,6 @@ async fn main() {
     server.listen().await.unwrap();
 }
 
+fn main() {
+    runtime().block_on(run());
+}
