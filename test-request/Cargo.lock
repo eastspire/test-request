@@ -545,9 +545,9 @@ dependencies = [
 
 [[package]]
 name = "http-compress"
-version = "2.12.0"
+version = "2.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dce740ff69923dba33591c2c625bb49ccc098264c19e72d004b6fecca7c7d7d7"
+checksum = "c5f7d507f95e723dd293f5c486554ab1e70692ee97c27fc4a493684f54dc6c9a"
 dependencies = [
  "brotli",
  "flate2",
@@ -556,15 +556,15 @@ dependencies = [
 
 [[package]]
 name = "http-constant"
-version = "1.42.0"
+version = "1.42.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c978c76917568ef84ce5020d6b1fa49ce74a4dd65bc290b93b1355a81aebdb9e"
+checksum = "1292cbdcf2588d15f8bf14cac381785c11ca7634d6a088cad9eebb5068d2652b"
 
 [[package]]
 name = "http-request"
-version = "8.70.0"
+version = "8.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f4c6dcff6e666a71dc2cdd197e8ad9ad8af00c7d4a6757b0fc8bbc73b1f16c8a"
+checksum = "53373322bbd813cd5a1cd1382d5c6ac87750e5a610688c4be20283aa52e37e6c"
 dependencies = [
  "http-type",
  "rustls",
@@ -573,9 +573,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "3.64.0"
+version = "3.64.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "228db23663f214e42497ed0fc66ddab4c7fea8039998823e49d516f559a92e5f"
+checksum = "d2d8d89138b251e0a91cdaa261885bcfc959986cba2131d448bdc75f2e18c1d0"
 dependencies = [
  "ahash",
  "dashmap",
@@ -884,9 +884,9 @@ checksum = "30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e"
 
 [[package]]
 name = "lombok-macros"
-version = "1.10.0"
+version = "1.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f7c4d9a6dbaf4cdb37d7b148e86ca3aa688b499eff0fb44ea566d9770fb28451"
+checksum = "3ffb76637e1a834f7ad93d96b8be0bcfa6673f08fdcab6c9fbeabc1cb0e8c379"
 dependencies = [
  "proc-macro2",
  "quote",
