@@ -137,9 +137,9 @@ checksum = "5c8214115b7bf84099f1309324e63141d4c5d7cc26862f97a0a857dbefe165bd"
 
 [[package]]
 name = "brotli"
-version = "8.0.0"
+version = "8.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf19e729cdbd51af9a397fb9ef8ac8378007b797f8273cfbfdf45dcaa316167b"
+checksum = "9991eea70ea4f293524138648e41ee89b0b2b12ddef3b255effa43c8056e0e0d"
 dependencies = [
  "alloc-no-stdlib",
  "alloc-stdlib",
@@ -545,9 +545,9 @@ dependencies = [
 
 [[package]]
 name = "http-compress"
-version = "2.13.0"
+version = "2.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fbec9c630191b7df2029ba5a70558a8fa9b30e0bc73bcdb08ea1d69e9764ed4d"
+checksum = "42e8fe2367f50ba59314488b240828c518c17f3b19d48d2555c62d947925d6ac"
 dependencies = [
  "brotli",
  "flate2",
@@ -562,9 +562,9 @@ checksum = "1292cbdcf2588d15f8bf14cac381785c11ca7634d6a088cad9eebb5068d2652b"
 
 [[package]]
 name = "http-request"
-version = "8.71.0"
+version = "8.72.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "09130b36a0ace7af540e19a8c209f285ef37cebb77680d1b528a87cbb6033d8e"
+checksum = "fd90f07074e187ff1776a80ab125308fb0fe8b7879ab32c65fa5b0c18c531086"
 dependencies = [
  "http-type",
  "rustls",
@@ -573,9 +573,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "3.67.0"
+version = "3.68.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7db6b0794e5bb36a7bb661c755983428455a2dd1ee80ca579bb54256ceaf2975"
+checksum = "7ccd07d720a1fe07d30d1f7f6f0eb5ebda6c0280d113a8211abe382e23872536"
 dependencies = [
  "ahash",
  "dashmap",
@@ -1188,9 +1188,9 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.23.26"
+version = "0.23.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "df51b5869f3a441595eac5e8ff14d486ff285f7b8c0df8770e49c3b56351f0f0"
+checksum = "730944ca083c1c233a75c09f199e973ca499344a2b7ba9e755c457e86fb4a321"
 dependencies = [
  "aws-lc-rs",
  "log",
@@ -1209,9 +1209,9 @@ checksum = "917ce264624a4b4db1c364dcc35bfca9ded014d0a958cd47ad3e960e988ea51c"
 
 [[package]]
 name = "rustls-webpki"
-version = "0.103.0"
+version = "0.103.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0aa4eeac2588ffff23e9d7a7e9b3f971c5fb5b7ebc9452745e0c232c64f83b2f"
+checksum = "7149975849f1abb3832b246010ef62ccc80d3a76169517ada7188252b9cfb437"
 dependencies = [
  "aws-lc-rs",
  "ring",
@@ -1242,9 +1242,9 @@ dependencies = [
 
 [[package]]
 name = "serde-xml-rs"
-version = "0.7.0"
+version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12ef8209566c27b96b10a096e25abc534e08e9bbbcf8e444b92640f1416dd1c6"
+checksum = "176b7ff880ab6ead7a020e773e9c096467fe347615a3e22ac29300cbdef67a5d"
 dependencies = [
  "log",
  "serde",
@@ -1642,9 +1642,9 @@ dependencies = [
 
 [[package]]
 name = "webpki-roots"
-version = "0.26.8"
+version = "0.26.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2210b291f7ea53617fbafcc4939f10914214ec15aace5ba62293a668f322c5c9"
+checksum = "37493cadf42a2a939ed404698ded7fb378bf301b5011f973361779a3a74f8c93"
 dependencies = [
  "rustls-pki-types",
 ]
