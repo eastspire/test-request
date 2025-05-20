@@ -545,9 +545,9 @@ dependencies = [
 
 [[package]]
 name = "http-compress"
-version = "2.13.1"
+version = "2.13.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42e8fe2367f50ba59314488b240828c518c17f3b19d48d2555c62d947925d6ac"
+checksum = "7f1e04c8ee442e52dfbf7e4003f614d8e35ff4e4f6ea9271871abcec8a6d7c85"
 dependencies = [
  "brotli",
  "flate2",
@@ -556,15 +556,15 @@ dependencies = [
 
 [[package]]
 name = "http-constant"
-version = "1.42.1"
+version = "1.42.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1292cbdcf2588d15f8bf14cac381785c11ca7634d6a088cad9eebb5068d2652b"
+checksum = "1808d8983c7ca1d289188767327a24d3e6c0c6a741257745fd7fea9f8f7a7635"
 
 [[package]]
 name = "http-request"
-version = "8.73.2"
+version = "8.73.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6f05dc885bb025686f0dfe8c9e991f83a12890370e4e9c0ac38c2e186c14a4d7"
+checksum = "de47cfe24abcd14f34cbe18f0ed02da6fc1c4ab723babc62b50c8f2345094e33"
 dependencies = [
  "http-type",
  "rustls",
@@ -573,9 +573,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "3.69.1"
+version = "3.69.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c1125f5f9bffc3610e876954970d1973450809cdebb4330e1f3d28dbdc31be12"
+checksum = "03e242a3c26c3365128c36a3cc803a4d3299cdf466dff723acbdee7a3911d045"
 dependencies = [
  "ahash",
  "dashmap",
@@ -884,9 +884,9 @@ checksum = "30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e"
 
 [[package]]
 name = "lombok-macros"
-version = "1.11.0"
+version = "1.11.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a41ecfde676fb603d89ad95447468fa15bc6605b27f43ae3cf491b4d698050e2"
+checksum = "89a6c00f977434776490d523145f6de60b6b7d9ce1096c011449484c80100a40"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1356,9 +1356,9 @@ checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 
 [[package]]
 name = "std-macro-extensions"
-version = "0.23.0"
+version = "0.23.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a607e0efa86ea0eaa1985e254fd8412d8d2d2aa5e46af96b67a6b188677dcbeb"
+checksum = "aa17898d2c4216a85ad32abd51101b6eab0adef954ed1393c4557ba378625ade"
 
 [[package]]
 name = "subtle"
