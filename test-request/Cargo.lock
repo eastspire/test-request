@@ -545,9 +545,9 @@ dependencies = [
 
 [[package]]
 name = "http-compress"
-version = "2.13.4"
+version = "2.13.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f1e04c8ee442e52dfbf7e4003f614d8e35ff4e4f6ea9271871abcec8a6d7c85"
+checksum = "90935a9ba153dcca173ac3787b8c0b5e74eabc982a9ddf801da885d17ea20c25"
 dependencies = [
  "brotli",
  "flate2",
@@ -562,9 +562,9 @@ checksum = "1808d8983c7ca1d289188767327a24d3e6c0c6a741257745fd7fea9f8f7a7635"
 
 [[package]]
 name = "http-request"
-version = "8.75.0"
+version = "8.75.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "93e1ddaffac953fc216c531d52cda3704c6e7d7e2a17bb13792de280e9c30e74"
+checksum = "588560c916267ffc931daba8eda4bf9d9811b9f7b6b2787101c2984467dd7ac1"
 dependencies = [
  "http-type",
  "rustls",
@@ -573,9 +573,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "3.75.0"
+version = "3.75.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d0e0264e804fa40afe79ef9c5e4aef20a100b98216ec29da82cc29dce3a1b188"
+checksum = "a2dd2ff1126e96b1f68d2ea7ddcd97c8e00b33bf73934a4e5950ec95318c7308"
 dependencies = [
  "ahash",
  "dashmap",
