@@ -437,9 +437,9 @@ checksum = "1808d8983c7ca1d289188767327a24d3e6c0c6a741257745fd7fea9f8f7a7635"
 
 [[package]]
 name = "http-request"
-version = "8.80.2"
+version = "8.81.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4768ae0eb99f458746e0c11bf8ec8bc5b35baf3763a06598eec90fed7fef57d"
+checksum = "ee8d6a5a134e246aba08ff883212619a31d8d39152a13ab5b901089be78e35dd"
 dependencies = [
  "http-type",
  "rustls",
@@ -450,9 +450,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "4.9.1"
+version = "4.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b14e4120a0ff0ddcb057ba6779ee5079a1ed18f56b00d08841bc6262acc6495"
+checksum = "69c40d1bcd7d62bd8d7ba3495c77985ba1dd6f83615c07c3c0115ede19471148"
 dependencies = [
  "dashmap",
  "hex",
@@ -463,7 +463,6 @@ dependencies = [
  "serde-xml-rs",
  "serde_json",
  "serde_urlencoded",
- "std-macro-extensions",
  "tokio",
  "url",
 ]
@@ -1147,12 +1146,6 @@ name = "stable_deref_trait"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
-
-[[package]]
-name = "std-macro-extensions"
-version = "0.23.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa17898d2c4216a85ad32abd51101b6eab0adef954ed1393c4557ba378625ade"
 
 [[package]]
 name = "subtle"
