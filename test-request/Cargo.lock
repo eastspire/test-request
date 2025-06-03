@@ -437,9 +437,9 @@ checksum = "1808d8983c7ca1d289188767327a24d3e6c0c6a741257745fd7fea9f8f7a7635"
 
 [[package]]
 name = "http-request"
-version = "8.81.0"
+version = "8.81.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee8d6a5a134e246aba08ff883212619a31d8d39152a13ab5b901089be78e35dd"
+checksum = "60ccb524577c61bfdfca2e0343327b16cfbee2e943f5ef776861361c9c841764"
 dependencies = [
  "http-type",
  "rustls",
@@ -450,9 +450,9 @@ dependencies = [
 
 [[package]]
 name = "http-type"
-version = "4.10.0"
+version = "4.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "69c40d1bcd7d62bd8d7ba3495c77985ba1dd6f83615c07c3c0115ede19471148"
+checksum = "d142300e68e039491f110c0493204474fa357fa92d8e9e609f087707a26074fa"
 dependencies = [
  "dashmap",
  "hex",
@@ -743,9 +743,9 @@ checksum = "30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e"
 
 [[package]]
 name = "lombok-macros"
-version = "1.11.4"
+version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "10cee2ce690915c2b491c9ea0d2d8e3daa3e30bcc55cc15fd9297b2566c4522e"
+checksum = "009c79e9d87f8b0a79b8350fc03ffeb9d4cefd632c47c3b7ea1f2fba72d70ade"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1056,9 +1056,9 @@ dependencies = [
 
 [[package]]
 name = "serde-xml-rs"
-version = "0.8.0"
+version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "176b7ff880ab6ead7a020e773e9c096467fe347615a3e22ac29300cbdef67a5d"
+checksum = "53630160a98edebde0123eb4dfd0fce6adff091b2305db3154a9e920206eb510"
 dependencies = [
  "log",
  "serde",
